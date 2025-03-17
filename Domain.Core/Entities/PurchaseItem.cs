@@ -11,6 +11,7 @@ namespace Domain.Core.Entities
             Quantity = quantity;
             ProductId = productId;
             PurchaseId = purchaseId;
+            Id = Guid.NewGuid();
         }
 
         public int Quantity { get; private set; }

@@ -14,6 +14,7 @@ namespace Domain.Core.Entities
             DateOfBirth = dateOfBirth;
             RegistrationDate = registrationDate;
             _purchases = purchases?.ToList() ?? new List<Purchase>();
+            Id = Guid.NewGuid();
         }
 
         public string FullName { get; private set; }

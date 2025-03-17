@@ -13,6 +13,7 @@ namespace Domain.Core.Entities
             TotalAmount = totalAmount;
             CustomerId = customerId;
             _purchaseItems = purchaseItems?.ToList() ?? new List<PurchaseItem>();
+            Id = Guid.NewGuid();
         }
 
         public decimal TotalAmount { get; private set; }

@@ -15,6 +15,7 @@ namespace Domain.Core.Entities
             Article = article;
             Price = price;
             _purchaseItems = purchaseItems?.ToList() ?? new List<PurchaseItem>();
+            Id = Guid.NewGuid();
         }
 
         public string Name { get; private set; }
